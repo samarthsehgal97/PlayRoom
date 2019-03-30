@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keyboard</title>
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <style>
+    .handsfree-webcam{
+        display:none;
+    }
+    #defaultCanvas0{
+    }
+    #instructions{
+      padding-top: 1% !important;
+      padding-left: 40% !important;
+      padding-bottom: 5%;
+      color: white;
+    }
+    body{
+      background-image:url(featured_artist_1.jpg);
+      height: 100vh;
+      width: 100vw;
+    }
+    </style>
+</head>
+<body>
+<a href="../index.html"><button class="btn btn-info"> Home </button></a>
+<center>
+        <div style="padding: 10px"></div>
+
+        <h1> Handsfree Keyboard </h1>
+        <div class="actions">
+                <p>Start Webcam and move your head around</p>
+                <button class="btn btn-success" onclick="handsfree.start()">Start Webcam</button>
+                <button class="btn btn-danger" onclick="handsfree.stop()">Stop Webcam</button>
+                <div style="padding: 10px"></div>
+                <div id="base"></div>
+        </div>
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="https://unpkg.com/handsfree@<4/dist/handsfree.js"></script>
+    <script src="hands.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- <script>
+      $('#instructions button').addClass('btn btn-warning');
+    </script> -->
+</center>
+</body>
+</html>

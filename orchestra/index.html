@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Orchestra</title>
+
+
+  <link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <h1 style="color: white; padding-bottom: 5px;"><center>CREATE YOUR OWN MUSIC! </center></h1>
+  <div id="app">
+  <div id="wrap">
+    <video id="webcam" autoplay></video>
+  </div>
+  <canvas id="canvas"></canvas>
+  <div id="pre">
+    <p>Strike a pose to your webcam to make some music!</p>
+    <button id="start" disabled>Loading&hellip;</button>
+  </div>
+</div>
+<a href="../index.html"><button class="btn btn-info" style="position: absolute; top:0px; float:left;"> Home </button></a>
+<div class="credits">
+  <p> Made with <i class="fa fa-heart" style="color: red"></i> in India. </p>
+</div>
+  <script src='https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.11.2/dist/tf.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet@0.0.1/dist/bundle.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/tone@0.12.80/build/Tone.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/startaudiocontext@1.2.1/StartAudioContext.min.js'></script>
+
+
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
